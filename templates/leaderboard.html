@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Table</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Score</th>
+        <th>Deaths</th>
+        <th>Kills</th>
+        <th>Coins</th>
+        <th>Gems</th>
+        <th>Gadgets</th>
+        <th>Damage Taken</th>
+      </tr>
+      {% for item in data %}
+      <tr>
+        <td>{{ item.Name }}</td>
+        <td>{{ item.Score }}</td>
+        <td>{{ item.Deaths }}</td>
+        <td>{{ item.Kills }}</td>
+        <td>{{ item.Coins }}</td>
+        <td>{{ item.Gems }}</td>
+        <td>{{ item.Gadgets }}</td>
+        <td>{{ item.DamageTaken }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
